@@ -1,0 +1,25 @@
+.container {
+    width: 900px;
+    background-color: cyan;
+}
+
+.title {
+    text-align: center;
+}
+
+.forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+}
+
+.chat {
+    border: none;
+    background-color: cyan;
+}
