@@ -1,10 +1,9 @@
-let user = document.getElementById("name");
-let avatar = document.getElementById("link");
-let comment = document.querySelector(".comment");
-let chat = document.querySelector(".chat");
+const user = document.getElementById("name");
+const avatar = document.getElementById("link");
+const comment = document.querySelector(".comment");
+const chat = document.querySelector(".chat");
 
 function addNewMessage(e) {
-  console.log("work");
   e.preventDefault();
   let newUser =
     user.value.charAt(0).toUpperCase() + user.value.slice(1).toLowerCase();
@@ -14,5 +13,15 @@ function addNewMessage(e) {
     <p class="comment">${comment.value.replace(/(xxx|viagra)/gi, "***")}</p>
     </div>`;
 }
+
+function addDate (a) {
+Data = new Date();
+Hour = Data.getHours();
+Minutes = Data.getMinutes();
+Seconds = Data.getSeconds();
+
+return `Data`, `Hour`, `Minutes`, `Seconds`;
+}
+
 let button = document.querySelector(".button");
-button.addEventListener("click", addNewMessage);
+button.addEventListener("click", addNewMessage, addDate);
