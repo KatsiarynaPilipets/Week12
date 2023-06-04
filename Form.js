@@ -19,8 +19,8 @@ function addNewMessage(e) {
 }
 
 const getDate = () => {
-
-  const date = date.getFullYear();
+let data = new Date;
+  let date = date.getFullYear();
 
   return date;
 }
