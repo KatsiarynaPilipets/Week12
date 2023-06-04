@@ -29,3 +29,9 @@
     height: 50px;
 }
 
+.checkbox {
+    display: flex;
+  text-align: left;
+  border: none;
+
+}

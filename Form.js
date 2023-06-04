@@ -3,8 +3,12 @@ const avatar = document.getElementById("link");
 const comment = document.querySelector(".comment");
 const chat = document.querySelector(".chat");
 
+
 function addNewMessage(e) {
   e.preventDefault();
+  const formData = new FormData(form2);
+  const name = formData.get('name');
+    let url = formData.get('url');
   let newUser =
     user.value.charAt(0).toUpperCase() + user.value.slice(1).toLowerCase();
   chat.innerHTML = `<div class="container">
@@ -14,14 +18,14 @@ function addNewMessage(e) {
     </div>`;
 }
 
-function addDate (a) {
-Data = new Date();
-Hour = Data.getHours();
-Minutes = Data.getMinutes();
-Seconds = Data.getSeconds();
+const getDate = () => {
 
-return `Data`, `Hour`, `Minutes`, `Seconds`;
+  const date = date.getFullYear();
+
+  return date;
 }
 
+console.log(getDate);
+
 let button = document.querySelector(".button");
-button.addEventListener("click", addNewMessage, addDate);
+button.addEventListener("click", addNewMessage, getDate);
