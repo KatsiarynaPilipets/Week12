@@ -14,24 +14,18 @@
       <div class="form">
         <form class="form1">
           <h2 class="titles">Оставьте комментарий</h2>
-          <fieldset class="checkbox">
-            <legend>Показывать ваше имя?</legend>
-            <div>
+          <div class="checkbox">
+            <p>Показывать ваше имя?</p>
+            <div id="checkbox">
               <input
-                type="radio"
-                id="yes"
-                name="showName"
-                value="yes"
-                required
-                checked
-              />
-              <label for="yes">Yes</label>
+                type="radio" id="yes" name="showName" value="yes" checked />
+              <label for="yes">Да</label>
             </div>
             <div>
               <input type="radio" id="no" name="showName" value="no" />
-              <label for="no">No</label>
+              <label for="no" id="no">Нет</label>
             </div>
-          </fieldset>
+          </div>
           <p class="put">Введите ваше имя:</p>
           <input name="name" type="text" class="name" id="name" />
           <p class="put">Введите ссылку вашего аватара:</p>
@@ -45,7 +39,10 @@
       </div>
       <div class="form2" id="form2">
         <h2 class="titles">Чат</h2>
-        <div class="chat"></div>
+        <div class="chat">
+          <img src="" class="photo" alt="photo">
+          <p class="username"></p>
+        </div>
       </div>
     </div>
     </div>
